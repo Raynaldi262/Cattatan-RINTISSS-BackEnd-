@@ -1,0 +1,11 @@
+1. Kalau rintis norm (</Batch Program Monitoring>)
+  -cara matiinya cek 
+    SELECT * FROM rs_batchprg_mon t 
+    WHERE batchprg_status in ('NE' or 'D') 
+       - yg statusnya NE or D ubah jadi DE
+
+2. Kalau rintis_norm error gamau jalanin report
+    cek select * from rs_limit
+        update PARSE_ILF limit datenya harus hari ini 
+            kalau mau jalanin secara otomatis, PARSE_ILF limit_no harus 4
+       
