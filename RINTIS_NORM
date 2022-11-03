@@ -1,8 +1,9 @@
 1. Kalau rintis norm (</Batch Program Monitoring>)
   -cara matiinya cek 
     SELECT * FROM rs_batchprg_mon t 
-    WHERE batchprg_status in ('NE' or 'D') 
+    WHERE batchprg_status in ('NE','D') 
        - yg statusnya NE or D ubah jadi DE
+        update rs_batchprg_mon set batchprg_status = 'DE' WHERE batchprg_status in ('NE', 'D');
 
 2. Kalau rintis_norm error gamau jalanin report
     cek select * from rs_limit
