@@ -9,4 +9,20 @@
     cek select * from rs_limit
         update PARSE_ILF limit datenya harus hari ini 
             kalau mau jalanin secara otomatis, PARSE_ILF limit_no harus 4
-       
+            
+3. Set rintis_norm jalan otomatis
+    - cek rs_limit bagian parser ILF, limit_no haru 4, dan limit date tanggal hari ini 
+      select * from rs_limit
+      
+    - update
+        UPDATE CZ_BATCH_SCHEDULER SET SCHEDULER_BUSINESS_DATE='221101'; -- tanggal yg mao dijalanin
+        UPDATE CZ_BATCH_SCHEDULER SET SCHEDULER_DONE_DATE='221102';     -- h-1 dari hari ini
+        UPDATE CZ_BATCH_SCHEDULERGRP SET SCHEDULER_DONE_DATE='221102';  -- h-1 dari hari ini
+        
+    - run rinits_norm
+        bin\startup
+        
+        
+        
+        
+      
