@@ -15,9 +15,9 @@
       select * from rs_limit
       
     - update
-        UPDATE CZ_BATCH_SCHEDULER SET SCHEDULER_BUSINESS_DATE='221101'; -- tanggal yg mao dijalanin
-        UPDATE CZ_BATCH_SCHEDULER SET SCHEDULER_DONE_DATE='221102';     -- h-1 dari hari ini
-        UPDATE CZ_BATCH_SCHEDULERGRP SET SCHEDULER_DONE_DATE='221102';  -- h-1 dari hari ini
+        UPDATE CZ_BATCH_SCHEDULER SET SCHEDULER_BUSINESS_DATE='20221101'; -- tanggal yg mao dijalanin
+        UPDATE CZ_BATCH_SCHEDULER SET SCHEDULER_DONE_DATE='20221102';     -- h-1 dari hari ini
+        UPDATE CZ_BATCH_SCHEDULERGRP SET SCHEDULER_DONE_DATE='20221102';  -- h-1 dari hari ini
         
     - run rinits_norm
         bin\startup
