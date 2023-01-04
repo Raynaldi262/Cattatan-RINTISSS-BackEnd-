@@ -25,4 +25,17 @@
         
         
         
+      EROR DISPUTE ------------------------------------------------------
+      
+      1.Transaksi ini tidak bisa diproses/disettle dikarenakan chargeback tidak memiliki attachment 
+        -- cek di \\10.126.212.141\att_qr  cari yg nama foldernya mirip RRN yg error
+        -- liat jamnya, batas diproses jam 3 pagi, lewat dari itu error 
+
+      2.Data Purchase/Record tidak ditemukan di table prs_tran_qr, transaksi ini tidak bisa diproses/disettle
+        -cek table dispute, kolom dispute_date, kalau ada isinya brti dispute pernah diproses pada tanggal segitu 
+          trus diajuin lagi jadi eror
+          
+          
+      
+      
       
